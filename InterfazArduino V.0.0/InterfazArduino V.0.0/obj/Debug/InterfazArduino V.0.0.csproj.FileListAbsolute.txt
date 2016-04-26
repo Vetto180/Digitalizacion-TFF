@@ -1,0 +1,9 @@
+c:\users\usuario\documents\visual studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\bin\Debug\InterfazArduino V.0.0.exe.config
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\bin\Debug\InterfazArduino V.0.0.exe
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\bin\Debug\InterfazArduino V.0.0.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\obj\Debug\InterfazArduino V.0.0.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\obj\Debug\InterfazArduino_V._0._0.Form1.resources
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\obj\Debug\InterfazArduino_V._0._0.Properties.Resources.resources
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\obj\Debug\InterfazArduino V.0.0.csproj.GenerateResource.Cache
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\obj\Debug\InterfazArduino V.0.0.exe
+C:\Users\USUARIO\Documents\Visual Studio 2015\Projects\InterfazArduino V.0.0\InterfazArduino V.0.0\obj\Debug\InterfazArduino V.0.0.pdb

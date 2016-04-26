@@ -1,0 +1,2 @@
+Este programa obtiene la entrada analogica de la senal 
+de audio con la placa arduino uno.
