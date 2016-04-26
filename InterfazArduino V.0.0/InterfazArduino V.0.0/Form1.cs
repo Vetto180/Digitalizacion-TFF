@@ -31,13 +31,13 @@ namespace InterfazArduino_V._0._0
                 {
                     if (NumeroDeMuestras <= 3000)
                     {
-                        string cadena = PuertoDeEntrada.ReadLine();
-                        double valor = (Convert.ToDouble(cadena)) * (0.0083612);
-                        if (valor > 5) {valor = 5;}
-                        else if (valor < 0) { valor = 0;}
+                        double valor = (Convert.ToDouble(PuertoDeEntrada.ReadLine())) * (0.0083612);
+                        if (valor > 5) valor = 5;
+                        else if (valor < 0) valor = 0;
                         valor = Math.Round(valor, 3);
                         valores[NumeroDeMuestras-1] = Convert.ToInt32(valor * 1000);
                         NumeroDeMuestras++;
+                        if (NumeroDeMuestras % 30 == 0) progressBar1.Increment(3);
                     }
                     else
                     {
@@ -45,9 +45,7 @@ namespace InterfazArduino_V._0._0
                         accesso = false;
                         button1.Enabled = true;
                     }
-                    if(NumeroDeMuestras % 30 == 0) progressBar1.Increment(3);
                 }
-                progressBar1.Visible = false;
             } catch (Exception)
             {
                 MessageBox.Show("Error de valor en la comunicacion serial");
@@ -59,7 +57,7 @@ namespace InterfazArduino_V._0._0
         private void GraficarValores()
         {
             Graphics papel = pictureBox1.CreateGraphics();
-            Pen LapizOrilla = new Pen(Color.Red,2);//CadeBlue
+            Pen LapizOrilla = new Pen(Color.DeepPink,2); //CadeBlue,Red
             Pen LapizRelleno = new Pen(Color.SteelBlue);
             for (int x = 0; x <= 2997; x++)
             {
@@ -81,6 +79,7 @@ namespace InterfazArduino_V._0._0
                 PuertoDeEntrada.Open();
                 PuertoDeEntrada.WriteLine("S");
                 ObtenerValores();
+                progressBar1.Visible = false;
                 GraficarValores();
             } catch (Exception)
             {
@@ -97,9 +96,6 @@ namespace InterfazArduino_V._0._0
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
         }
     }
-    /* Conseguir un componente que aplique la transaformada de fouirer para
-    para una serie de valores, que seria el vector de las muestras y que la grafique */
 }
