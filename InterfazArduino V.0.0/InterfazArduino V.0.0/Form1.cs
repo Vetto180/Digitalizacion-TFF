@@ -17,10 +17,7 @@ namespace InterfazArduino_V._0._0
         public int NumeroDeMuestras = 1;
         int[] valores = new int[3000];
         SerialPort PuertoDeEntrada = new SerialPort();
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() { InitializeComponent(); }
 
         private void ObtenerValores()
         {
@@ -57,12 +54,12 @@ namespace InterfazArduino_V._0._0
         private void GraficarValores()
         {
             Graphics papel = pictureBox1.CreateGraphics();
-            Pen LapizOrilla = new Pen(Color.DeepPink,2); //CadeBlue,Red
+            Pen LapizOrilla = new Pen(Color.DeepPink,2); //CadeBlue,Red,DeepPink,LawnGreen
             Pen LapizRelleno = new Pen(Color.SteelBlue);
-            for (int x = 0; x <= 2997; x++)
+            for (int x = 0; x <= 999; x++)
             {
-                papel.DrawLine(LapizRelleno, x / 3, pictureBox1.Height, x / 3, pictureBox1.Height - (valores[x] / 10) + 1);
-                papel.DrawLine(LapizOrilla, x / 3, pictureBox1.Height - (valores[x] / 10), x / 3, pictureBox1.Height - (valores[x] / 10) + 1);
+                papel.DrawLine(LapizRelleno, x, pictureBox1.Height, x, pictureBox1.Height - (valores[x] / 10) + 1);
+                papel.DrawLine(LapizOrilla, x, pictureBox1.Height - (valores[x] / 10), x, pictureBox1.Height - (valores[x] / 10) + 1);
             }
         }
 
